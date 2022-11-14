@@ -13,10 +13,6 @@ body {
 header {
   padding-bottom: 15px;
 }
-header h2 {
-  padding-bottom: 5px;
-}
-
 /*standard table setion*/
 .standard--table--container {
   display: block;
@@ -46,6 +42,7 @@ header h2 {
   border-left: 1px solid #e9ccfc;
 }
 .standard--flex--table:first-of-type {
+  border-top: 1px solid #e9ccfc;
   border-left: 1px solid #e9ccfc;
 }
 .standard--flex--table:first-of-type .standard--flex--row {
@@ -80,6 +77,10 @@ header h2 {
   }
   .standard--flex--row {
     width: 100%;
+  }
+  .standard--flex--row.first {
+    width: 100%;
+    border-bottom: 1px solid #e9ccfc;
   }
 }
 .flex-cell {

@@ -11,8 +11,8 @@ body {
   line-height: 1.2em;
 }
 
-.heading--container {
-  margin: 2%;
+h2 {
+  margin-bottom: 10px;
 }
 
 .standard--table--section {
@@ -39,55 +39,36 @@ body {
 .standard--flex--table {
   display: flex;
   flex-flow: row wrap;
-  border-left: 1px solid #ccfcf5;
-}
-.standard--flex--table:first-of-type {
-  border-top: 1px solid #ccfcf5;
-  border-left: 1px solid #ccfcf5;
 }
 .standard--flex--table:first-of-type .standard--flex--row {
-  background: #2ec2ae;
-  color: rgb(255, 255, 255);
-  border: 1px solid #ccfcf5;
+  color: #2ec2ae;
 }
 
 .standard--flex--row {
   width: 33.3333333333%;
   text-align: left;
   padding: 0.5em 0.5em;
-  border-right: 1px solid #ccfcf5;
-  border-bottom: 1px solid #ccfcf5;
-}
-
-.flex-cell {
-  width: 33.3333333333%;
-  text-align: left;
-  padding: 0.5em 0.5em;
-  border-right: 1px solid #ccfcf5;
-  flex: 1 1 33.3%;
-}
-.flex-cell:last-child {
-  border-right: 0;
+  border-bottom: 2px solid #ccfcf5;
 }
 
 @media all and (max-width: 767px) {
+  .standard--flex--row {
+    width: 25%;
+    text-align: center;
+  }
   .standard--flex--table .standard--flex--row {
     border-bottom: 0;
   }
   .standard--flex--table .standard--flex--row:last-of-type {
-    border-bottom: 1px solid #ccfcf5;
+    border-bottom: 2px solid #ccfcf5;
   }
   .header .standard--flex--row {
-    border-bottom: 1px solid #ccfcf5;
+    border-bottom: 2px solid #ccfcf5;
   }
   .standard--flex--row {
     width: 100%;
   }
-  .standard--flex--row.first {
-    width: 100%;
-    border-bottom: 1px solid #ccfcf5;
-  }
 }
 .flex-cell {
   width: 100%;
-}/*# sourceMappingURL=standard-table.css.map */
+}/*# sourceMappingURL=basic-table.css.map */
