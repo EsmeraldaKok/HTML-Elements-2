@@ -1,0 +1,116 @@
+$table-header: #2ec2ae;
+$table-border: 1px solid #ccfcf5;
+
+
+$font:'Lato', sans-serif;
+$fontW_thin:300;
+$fontW_reg:400;
+$fontW_bold:700;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: $font;
+  line-height: 1.2em;
+}
+
+
+.heading--container {
+    margin: 2%;
+}
+
+.standard--table--section {
+    margin: 3%;
+    padding-left: 5px;
+}
+
+
+/*standard table setion*/
+
+.standard--table--container {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  padding-top: 20px;
+}
+
+.standard--table--header {
+    font-weight: $fontW_bold;
+}
+
+.row {
+    font-weight: $fontW_thin;
+}
+
+.standard--flex--table {
+  display: flex;
+  flex-flow: row wrap;
+  border-left: $table-border;
+
+  &:first-of-type {
+    border-top: $table-border;
+    border-left: $table-border;
+  }
+  &:first-of-type .standard--flex--row {
+    background: $table-header;
+    color: rgb(255, 255, 255);
+    border: $table-border;
+  }
+  
+}
+
+.standard--flex--row {
+  width: calc(100% / 3);
+  text-align: left;
+  padding: 0.5em 0.5em;
+  border-right: $table-border;
+  border-bottom:$table-border;
+
+}
+
+.flex-cell {
+  width: calc(100% / 3); 
+  text-align: left;
+  padding: 0.5em 0.5em;
+  border-right:$table-border;
+  flex: 1 1 33.3%;
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+
+
+@media all and (max-width: 767px) {
+  
+.standard--flex--table {
+    .standard--flex--row {
+      border-bottom: 0;
+    }
+    .standard--flex--row:last-of-type {
+      border-bottom:$table-border;
+    }
+  }
+  
+  .header {
+    .standard--flex--row {
+      border-bottom: $table-border;
+    }
+  }
+  
+  .standard--flex--row {
+    width: 100%;
+    
+   &.first {
+     width: 100%;
+     border-bottom:$table-border;
+   }
+  }
+
+}
+  .flex-cell {
+    width: 100%; 
+  }
+

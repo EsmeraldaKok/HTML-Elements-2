@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Lato", sans-serif;
+  line-height: 1.2em;
+}
+
+.heading--container {
+  margin: 2%;
+}
+
+.standard--table--section {
+  margin: 3%;
+  padding-left: 5px;
+}
+
+/*standard table setion*/
+.standard--table--container {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  padding-top: 20px;
+}
+
+.standard--table--header {
+  font-weight: 700;
+}
+
+.row {
+  font-weight: 300;
+}
+
+.standard--flex--table {
+  display: flex;
+  flex-flow: row wrap;
+  border-left: 1px solid #ccfcf5;
+}
+.standard--flex--table:first-of-type {
+  border-top: 1px solid #ccfcf5;
+  border-left: 1px solid #ccfcf5;
+}
+.standard--flex--table:first-of-type .standard--flex--row {
+  background: #2ec2ae;
+  color: rgb(255, 255, 255);
+  border: 1px solid #ccfcf5;
+}
+
+.standard--flex--row {
+  width: 33.3333333333%;
+  text-align: left;
+  padding: 0.5em 0.5em;
+  border-right: 1px solid #ccfcf5;
+  border-bottom: 1px solid #ccfcf5;
+}
+
+.flex-cell {
+  width: 33.3333333333%;
+  text-align: left;
+  padding: 0.5em 0.5em;
+  border-right: 1px solid #ccfcf5;
+  flex: 1 1 33.3%;
+}
+.flex-cell:last-child {
+  border-right: 0;
+}
+
+@media all and (max-width: 767px) {
+  .standard--flex--table .standard--flex--row {
+    border-bottom: 0;
+  }
+  .standard--flex--table .standard--flex--row:last-of-type {
+    border-bottom: 1px solid #ccfcf5;
+  }
+  .header .standard--flex--row {
+    border-bottom: 1px solid #ccfcf5;
+  }
+  .standard--flex--row {
+    width: 100%;
+  }
+  .standard--flex--row.first {
+    width: 100%;
+    border-bottom: 1px solid #ccfcf5;
+  }
+}
+.flex-cell {
+  width: 100%;
+}/*# sourceMappingURL=standard-table.css.map */
