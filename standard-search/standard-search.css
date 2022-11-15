@@ -8,6 +8,7 @@ body {
   margin: 15px;
   font-family: "Lato", sans-serif;
   line-height: 1.2em;
+  background-color: rgba(255, 255, 255, 0.575);
 }
 
 p {
@@ -51,27 +52,19 @@ p {
 .standard-table-container {
   border: none;
   margin: 2.5px 5px;
+  border: 2px solid #ccfcf5;
+  box-shadow: 0.5px 3px 10px #d4fffb;
+  border-radius: 8px;
 }
 .standard-table-container .standard-table-elements {
   width: 100%;
   max-width: 400px;
   padding: 5px 10px;
   font-weight: 300;
-  box-shadow: 0.5px 3px 10px #d4fffb;
-}
-.standard-table-container .standard-table-elements:first-of-type {
-  border: 2px solid #ccfcf5;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-.standard-table-container .standard-table-elements:last-of-type {
-  border: 2px solid #ccfcf5;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 .standard-table-container .standard-table-elements:nth-child(2):nth-last-child(2) {
-  border-left: 2px solid #ccfcf5;
-  border-right: 2px solid #ccfcf5;
+  border-bottom: 2px solid #ccfcf5;
+  border-top: 2px solid #ccfcf5;
 }
 
 .container {

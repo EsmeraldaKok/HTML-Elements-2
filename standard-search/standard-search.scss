@@ -17,6 +17,7 @@ body {
   margin: 15px;
   font-family: $font;
   line-height: 1.2em;
+  background-color: rgba(255, 255, 255, 0.575);
 }
 p {
     font-size: 13px;
@@ -63,31 +64,24 @@ p {
 .standard-table-container {
     border: none;
     margin: 2.5px 5px;
+    border: $table-border;
+    box-shadow: 0.5px 3px 10px #d4fffb;
+    border-radius: 8px;
 
     .standard-table-elements {
         width: 100%;
         max-width: 400px;
         padding: 5px 10px;
         font-weight: $fontW_thin;    
-        box-shadow: 0.5px 3px 10px #d4fffb;
-    }
-
-    .standard-table-elements:first-of-type  {
-        border: $table-border;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-
-    .standard-table-elements:last-of-type {
-        border: $table-border;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
+        
     }
 
     .standard-table-elements:nth-child(2):nth-last-child(2) {
-        border-left: $table-border;
-        border-right: $table-border;
+        border-bottom: $table-border;
+        border-top: $table-border;
     }
+
+
 }
 
 
