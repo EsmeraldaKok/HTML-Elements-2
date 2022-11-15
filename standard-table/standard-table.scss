@@ -1,5 +1,5 @@
-$table-header: #2ec2ae;
-$table-border: 1px solid #ccfcf5;
+$table-header: #eb6ccf;
+$table-border: 1px solid #ffb3ee;
 
 
 $font:'Lato', sans-serif;
@@ -19,16 +19,25 @@ body {
   padding: 15px;
   font-family: $font;
   line-height: 1.2em;
+  color:rgb(61, 62, 63);
 }
 
+.heading--container {
+      margin: 10px auto;
 
+  p {
+    padding-top: 10px;
+  }
+}
 
 .table--header {
-
   margin-left: 13px;
 
   h2{
     margin-top: 20px;
+  }
+  p {
+    padding:8.5px;
   }
 }
 

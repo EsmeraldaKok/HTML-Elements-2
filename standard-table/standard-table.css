@@ -8,6 +8,14 @@ body {
   padding: 15px;
   font-family: "Lato", sans-serif;
   line-height: 1.2em;
+  color: rgb(61, 62, 63);
+}
+
+.heading--container {
+  margin: 10px auto;
+}
+.heading--container p {
+  padding-top: 10px;
 }
 
 .table--header {
@@ -15,6 +23,9 @@ body {
 }
 .table--header h2 {
   margin-top: 20px;
+}
+.table--header p {
+  padding: 8.5px;
 }
 
 .standard--table--header {
@@ -36,31 +47,31 @@ body {
 .standard--flex--table {
   display: flex;
   flex-flow: row wrap;
-  border-left: 1px solid #ccfcf5;
+  border-left: 1px solid #ffb3ee;
 }
 .standard--flex--table:first-of-type {
-  border-top: 1px solid #ccfcf5;
-  border-left: 1px solid #ccfcf5;
+  border-top: 1px solid #ffb3ee;
+  border-left: 1px solid #ffb3ee;
 }
 .standard--flex--table:first-of-type .standard--flex--row {
-  background: #2ec2ae;
+  background: #eb6ccf;
   color: rgb(255, 255, 255);
-  border: 1px solid #ccfcf5;
+  border: 1px solid #ffb3ee;
 }
 
 .standard--flex--row {
   width: 33.3333333333%;
   text-align: left;
   padding: 0.5em 0.5em;
-  border-right: 1px solid #ccfcf5;
-  border-bottom: 1px solid #ccfcf5;
+  border-right: 1px solid #ffb3ee;
+  border-bottom: 1px solid #ffb3ee;
 }
 
 .flex-cell {
   width: 33.3333333333%;
   text-align: left;
   padding: 0.5em 0.5em;
-  border-right: 1px solid #ccfcf5;
+  border-right: 1px solid #ffb3ee;
   flex: 1 1 33.3%;
 }
 .flex-cell:last-child {
@@ -72,17 +83,17 @@ body {
     border-bottom: 0;
   }
   .standard--flex--table .standard--flex--row:last-of-type {
-    border-bottom: 1px solid #ccfcf5;
+    border-bottom: 1px solid #ffb3ee;
   }
   .header .standard--flex--row {
-    border-bottom: 1px solid #ccfcf5;
+    border-bottom: 1px solid #ffb3ee;
   }
   .standard--flex--row {
     width: 100%;
   }
   .standard--flex--row.first {
     width: 100%;
-    border-bottom: 1px solid #ccfcf5;
+    border-bottom: 1px solid #ffb3ee;
   }
 }
 .flex-cell {
