@@ -14,6 +14,9 @@ body {
 .heading--container {
   margin: 10px auto;
 }
+.heading--container h1 {
+  color: #eb6ccf;
+}
 .heading--container p {
   padding-top: 10px;
 }
@@ -23,6 +26,7 @@ body {
 }
 .table--header h2 {
   margin-top: 20px;
+  color: #eb6ccf;
 }
 .table--header p {
   padding: 8.5px;
